@@ -13,4 +13,4 @@ _Task 3: To do Web App_<br>
 Done using html, css and js. Can edit, delete, checkoff a completed task and count the number of pending tasks.
 <br>
 _Task 4: Login Authentication_<br>
-Done using html, css, python's flask framework and sql to store the data. Consists of a login, signup, and a home page.
+Done using html, css, python's flask framework and sql to store the data. Consists of a login, signup, and a secured page.
