@@ -1,4 +1,4 @@
-**Oasis Web Dev Internship Tasks**<br>
+**Oasis Infobyte Web Dev Internship Tasks**<br>
 <br>
 In this repository, you'll find tasks I've done during my Oasis Web Development Internship. <br>
 The repo includes all four tasks of Level 2:
