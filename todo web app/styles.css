@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gloria Hallelujah';
+}
+
+body {
+    display: flex;
+    background-image: url(back6.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hi {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    /* right: 90px; */
+    left: 0px;
+    /* width: 400px; */
+    font-size: 30px;
+    /* background-color: rgba(238, 136, 154, 1); */
+    padding-left: 40px;
+    border-radius: 30px;
+    
+}
+
+.hi input {
+    /* background-color: rgb(255, 255, 255, 0); */
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 30px;
+    /* color: white; */
+    /* color: black; */
+    outline: none;
+    width: 160px;
+}
+
+.hi input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: lighter;
+}
+
+.page {
+    width: 450px;
+    height: 620px;
+    background-color: white;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    /* background-color: aqua; */
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.heading {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.count {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rgba(233, 233, 233, 1);
+    border-radius: 32px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.num {
+    margin-right: 6px;
+}
+
+.header img {
+    position: relative;
+    width: 450px;
+    right: 30px;
+}
+
+.content {
+    padding-right: 30px;
+}
+
+.content p{
+    padding-top: 10px;
+    padding-left: 30px;
+    color: rgba(183, 188, 191, 1);
+    position: relative;
+    /* display: none; */
+}
+
+.task {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 0.6fr 10fr 0.8fr 0.8fr;
+    gap: 1rem;
+}
+
+
+.task input[type = "checkbox"] {
+    position: relative;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+    border: 1px solid rgba(183, 188, 191, 1);
+}
+
+.task input[type = "checkbox"]:checked {
+    /* background-color: rgba(238, 136, 154, 1); */
+    background-color: rgba(255, 238, 238, 1);
+    border-color: rgba(255, 238, 238, 1);
+    /* border-color: rgba(183, 188, 191, 1); */
+    /* border-color: rgba(238, 136, 154, 1); */
+}
+
+.task input[type = "checkbox"]:checked:before {
+    position: absolute;
+    content: "\f00c";
+    padding: 3px;
+    /* color: white; */
+    color: rgba(238, 136, 154, 1);
+    font-size: 0.8rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.task span {
+    font: 0.9em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.task button {
+    /* color: white; */
+    color: rgba(89, 129, 152, 1);
+    width: 100%;
+    /* padding: 1em 0; */
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.task .edit {
+    /* background-color: rgba(238, 136, 154, 1); */
+    background-color: white;
+    color: rgba(238, 200, 126, 1);
+    display: none;
+}
+
+.delete {
+    background-color: white;
+    display: none;
+}
+
+.task:hover button {
+    display: inline-block;
+}
+
+.completed {
+    /* text-decoration: line-through; */
+    color: rgba(183, 188, 191, 1);
+}
+
+
+.border {
+    position: absolute;
+    bottom: 140px;
+    width: 450px;
+
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100px;
+    bottom: 50px;
+}
+
+.input input {
+    margin-left: 30px;
+    width: 280px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: rgba(183, 188, 191, 1);
+}
+
+.input button {
+    padding: 10px ;
+    margin-bottom: 5px;
+    background-color: rgba(238, 136, 154, 1);
+    border: none;
+    font-size: 16px;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+#error {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    background-color: white;
+    bottom: 20px;
+    left: 575px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 30px;
+    color: rgba(238, 136, 154, 1);
+    display: none;
+}
